@@ -1,0 +1,175 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %} index {% endblock title %}
+
+{% block body %}
+
+ 
+<div class="col-sm-4">
+  
+  <h4 class="text-center alert alert-info"> Add Student </h4>
+
+  <form method="post" action="">
+    {% csrf_token %}
+
+    <div class="mb-3 mt-5">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="please enter your Name">
+    </div>
+    <div class="mb-3">
+      <label for="reg" class="form-label">Registration Number</label>
+      <input type="text" class="form-control" id="reg" name="reg" placeholder="please enter your Reg#">
+    </div>
+    <div class="mb-3">
+      <label for="sec" class="form-label">Section</label>
+      <input type="text" class="form-control" id="sec" name="sec" placeholder="please enter your Section">
+    </div>
+    <div class="mb-3">
+      <label for="project_name" class="form-label">Project Name</label>
+      <input type="text" class="form-control" id="project_name" name="project_name"
+        placeholder="please enter your Project name">
+    </div>
+
+    <div class="mb-3">
+      <label for="project_field" class="form-label">Project Field</label>
+      <input type="text" class="form-control" id="project_field" name="project_field"
+        placeholder="please enter your Project Field">
+    </div>
+
+    <div class="mb-3">
+      <label for="superident" class="form-label">Superviser</label>
+      <input type="text" class="form-control" id="superident" name="superident"
+        placeholder="please enter your Superviser">
+    </div>
+
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+</div>
+
+
+<div class="col-sm-8 mx-1">
+
+  <h4 class="text-center alert alert-info"> Show Student Information </h4>
+
+
+
+<table id="example" class="table table-dark table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Registration</th>
+      <th scope="col">Section</th>
+      <th scope="col">Project</th>
+      <th scope="col">Field</th>
+      <th scope="col">Superviser</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Run a for loop here and iterate through all the index -->
+
+    
+    <tr>
+
+   
+      <th class="table-primary" scope="row">1</th>
+      <td class="table-secondary" >Bilal Ahmad</td>
+      <td class="table-success">FA19-BSE-007</td>
+      <td class="table-danger">A</td>
+      <td class="table-warning">PUBG GAME</td>
+      <td class="table-info">Game Development</td>
+      <td class="table-light">Ma'am Mubeen</td>
+    </tr>
+    
+     <tr>
+
+   
+      <th class="table-primary" scope="row">1</th>
+      <td class="table-secondary" >Bilal Ahmad</td>
+      <td class="table-success">FA19-BSE-007</td>
+      <td class="table-danger">A</td>
+      <td class="table-warning">PUBG GAME</td>
+      <td class="table-info">Game Development</td>
+      <td class="table-light">Ma'am Mubeen</td>
+    </tr>
+   
+     <tr>
+
+   
+      <th class="table-primary" scope="row">1</th>
+      <td class="table-secondary" >Bilal Ahmad</td>
+      <td class="table-success">FA19-BSE-007</td>
+      <td class="table-danger">A</td>
+      <td class="table-warning">PUBG GAME</td>
+      <td class="table-info">Game Development</td>
+      <td class="table-light">Ma'am Mubeen</td>
+    </tr>
+   
+     <tr>
+
+   
+      <th class="table-primary" scope="row">1</th>
+      <td class="table-secondary" >Bilal Ahmad</td>
+      <td class="table-success">FA19-BSE-007</td>
+      <td class="table-danger">A</td>
+      <td class="table-warning">PUBG GAME</td>
+      <td class="table-info">Game Development</td>
+      <td class="table-light">Ma'am Mubeen</td>
+    </tr>
+   
+     <tr>
+
+   
+      <th class="table-primary" scope="row">1</th>
+      <td class="table-secondary" >Bilal Ahmad</td>
+      <td class="table-success">FA19-BSE-007</td>
+      <td class="table-danger">A</td>
+      <td class="table-warning">PUBG GAME</td>
+      <td class="table-info">Game Development</td>
+      <td class="table-light">Ma'am Mubeen</td>
+    </tr>
+   
+     <tr>
+
+   
+      <th class="table-primary" scope="row">1</th>
+      <td class="table-secondary" >Bilal Ahmad</td>
+      <td class="table-success">FA19-BSE-007</td>
+      <td class="table-danger">A</td>
+      <td class="table-warning">PUBG GAME</td>
+      <td class="table-info">Game Development</td>
+      <td class="table-light">Ma'am Mubeen</td>
+    </tr>
+   
+     <tr>
+
+   
+      <th class="table-primary" scope="row">1</th>
+      <td class="table-secondary" >Bilal Ahmad</td>
+      <td class="table-success">FA19-BSE-007</td>
+      <td class="table-danger">A</td>
+      <td class="table-warning">PUBG GAME</td>
+      <td class="table-info">Game Development</td>
+      <td class="table-light">Ma'am Mubeen</td>
+    </tr>
+      
+
+
+  </tbody>
+
+ 
+</table>
+
+
+
+</div>
+
+
+{% endblock body %}
+
+
