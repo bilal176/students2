@@ -72,93 +72,21 @@
   </thead>
   <tbody>
     <!-- Run a for loop here and iterate through all the index -->
-
+    {% for students in task %}
     
     <tr>
 
    
-      <th class="table-primary" scope="row">1</th>
-      <td class="table-secondary" >Bilal Ahmad</td>
-      <td class="table-success">FA19-BSE-007</td>
-      <td class="table-danger">A</td>
-      <td class="table-warning">PUBG GAME</td>
-      <td class="table-info">Game Development</td>
-      <td class="table-light">Ma'am Mubeen</td>
+      <th class="table-primary" scope="row">{{forloop.counter}}</th>
+      <td class="table-secondary" >{{students.name}}</td>
+      <td class="table-success">{{students.reg}}</td>
+      <td class="table-danger">{{students.sec}}</td>
+      <td class="table-warning">{{students.project_name}}</td>
+      <td class="table-info">{{students.project_field}}</td>
+      <td class="table-light">{{students.superident}}</td>
     </tr>
     
-     <tr>
-
-   
-      <th class="table-primary" scope="row">1</th>
-      <td class="table-secondary" >Bilal Ahmad</td>
-      <td class="table-success">FA19-BSE-007</td>
-      <td class="table-danger">A</td>
-      <td class="table-warning">PUBG GAME</td>
-      <td class="table-info">Game Development</td>
-      <td class="table-light">Ma'am Mubeen</td>
-    </tr>
-   
-     <tr>
-
-   
-      <th class="table-primary" scope="row">1</th>
-      <td class="table-secondary" >Bilal Ahmad</td>
-      <td class="table-success">FA19-BSE-007</td>
-      <td class="table-danger">A</td>
-      <td class="table-warning">PUBG GAME</td>
-      <td class="table-info">Game Development</td>
-      <td class="table-light">Ma'am Mubeen</td>
-    </tr>
-   
-     <tr>
-
-   
-      <th class="table-primary" scope="row">1</th>
-      <td class="table-secondary" >Bilal Ahmad</td>
-      <td class="table-success">FA19-BSE-007</td>
-      <td class="table-danger">A</td>
-      <td class="table-warning">PUBG GAME</td>
-      <td class="table-info">Game Development</td>
-      <td class="table-light">Ma'am Mubeen</td>
-    </tr>
-   
-     <tr>
-
-   
-      <th class="table-primary" scope="row">1</th>
-      <td class="table-secondary" >Bilal Ahmad</td>
-      <td class="table-success">FA19-BSE-007</td>
-      <td class="table-danger">A</td>
-      <td class="table-warning">PUBG GAME</td>
-      <td class="table-info">Game Development</td>
-      <td class="table-light">Ma'am Mubeen</td>
-    </tr>
-   
-     <tr>
-
-   
-      <th class="table-primary" scope="row">1</th>
-      <td class="table-secondary" >Bilal Ahmad</td>
-      <td class="table-success">FA19-BSE-007</td>
-      <td class="table-danger">A</td>
-      <td class="table-warning">PUBG GAME</td>
-      <td class="table-info">Game Development</td>
-      <td class="table-light">Ma'am Mubeen</td>
-    </tr>
-   
-     <tr>
-
-   
-      <th class="table-primary" scope="row">1</th>
-      <td class="table-secondary" >Bilal Ahmad</td>
-      <td class="table-success">FA19-BSE-007</td>
-      <td class="table-danger">A</td>
-      <td class="table-warning">PUBG GAME</td>
-      <td class="table-info">Game Development</td>
-      <td class="table-light">Ma'am Mubeen</td>
-    </tr>
-      
-
+    {% endfor %}
 
   </tbody>
 
